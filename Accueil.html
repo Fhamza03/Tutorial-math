@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Facile - Accueil</title>
+    <link rel="stylesheet" href="Accueil.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="Accueil.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="Math facile.png" alt="" id="logo">
+          
+          <div class="collapse navbar-collapse container" id="navbarTogglerDemo03">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Chercher" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Chercher</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 container">
+            <li class="nav-item">
+              <a class="nav-link active text text-light" aria-current="page" href="Accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text text-light" href="Tuto.html">Tutorial</a>
+              <!-- <div class="dropdown">
+                <a class="nav-link text text-primary" href="Tuto.html"><button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseover="Affiche()" onclick="Hide()"> 
+                  Tutorial
+                </button></a>
+                <ul class="dropdown-menu" style="display: none;" id="drop">
+                  <li><a class="nav-link text text-primary" href="Tuto.html" style="text-align: center;" onclick="ShowAlg(event)">Algébre</a></li>
+                  <li><a class="nav-link text text-primary" href="Tuto.html" style="text-align: center;" onclick="ShowAnl(event)">Analyse</a></li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text text-light" href="TuteurPv.html" id="tutoPv" style="pointer-events: none;">Tuteur privé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text text-light" href="login.php">Se connecter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text text-light" href="ContactUs.php">Nous contacter</a>
+              </li>
+          </ul>
+      </nav>
+
+      <div class="bg-imagee">
+        <h2 class="text-light" id="title"><b class="text text-primary">Math Facile</b> <b class="text text-light">içi vous trouvez tous vos cours et exercices<br>
+           de mathématique pour une bonne éducation.</b>
+        </h2>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+              <img src="mathPic.jpg" alt="" style="width: 450px; height: 509px;">
+          </div>
+          <div class="col-md-8">
+            <h2 class="text text-primary" id="aide" style="padding-top: 19px;">Vous avez besoin d'aide ?</h2>
+            <p class="container-fluid">
+                D'abord qui sont nous? <b class="text-primary">Math facile</b> est un site web qui va vous aidez de trouvez 
+                des cours, exrecices<br>   en mathématique selon votre niveau d'étude,
+                il est dévloppé par les étudiants <b class="text-secondary">hamza FELLAH et  <br>    wissal DEMYANI </b>sous l'encadrement du <b class="text-secondary">Dr.SAIDI</b>
+                et <b class="text-secondary">Dr.TAKI</b>, Si vous avez des questions ou bien<br>   vous avez besoin d'aide n'esiter 
+                pas de nous contactez par suivre les étapes suivants : <br>  
+                <b>1-</b> Il suffit de cliquer sur <a href="ContactUs.php">Nous contacter</a> entrer votre e-mail, mot de passe et laisser
+                votre message.<br> 
+                <b>2-</b> dans le cas si vous n'avez pas de compte cliquer sur <a href="login.php">Se connecter</a> et vous trouvez une place d'inscription.  
+            </p>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <h2 class="container text text-primary">Dernier rapide !</h2>
+              <h6  class="title">Diagonalisation (<a href="Diagonalisation.pdf" class="text-success" id="diago" onclick="Save('diago')">cours</a> ,  <a href="ExDiago.pdf" class="text-danger" id="exdiago" onclick="Save('exdiago')">exercices</a>)</h6><br>
+              <h6   class="title">Fonctions holomorphes (<a href="FonctionHolomorphes.pdf" class="text-success" id="Fho" onclick="Save('Fho')">cours</a> , <a href="ExFonctionHolomorphes.pdf" class="text-danger" id="exFho"  onclick="Save('exFho')">exercices</a>)</h6><br>
+              <h6   class="title">Intégrale multiple (<a href="IntgMult.pdf" class="text-success" id="Intmultp" onclick="Save('Intmultp')">cours</a> , <a href="ExIntgMult.pdf" class="text-danger" id="exIntmultp" onclick="Save('exIntmultp')">exercices</a>)</h6><br> 
+              <h6 class="title">Nombre complexe (<a href="NbrCmplx.pdf" class="text-success" id="nbrcmplx" onclick="Save('nbrcmplx')">cours</a> , <a href="ExNbrCmplx.pdf" class="text-danger" id="exnbrcmplx" onclick="Save('exnbrcmplx')">exercices</a>)</h6><br>
+
+              
+              <!-- <ul id="title-list"></ul> -->
+              <script src="script.js"></script>
+              
+
+             
+                  
+          </div>
+          <div class="col-md-6">
+            <h2 class="container text text-primary">Pourquoi nous ?</h2>
+                <p class="container-fluid">
+                  Vous êtes des étudiants dans l'enseignement supérieur. <b class="text-primary">Math Facile</b> est votre 
+                  parfait choix pour l'éducation, car il vous offre des cours et des séries d'exrecices pour les bien 
+                  pratiquer. 
+                </p>
+        </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <script src="Accueil.js"></script>
+</body>
+</html>

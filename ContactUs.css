@@ -1,0 +1,33 @@
+
+img#logo{
+    width: 127px;
+    height: 70px;
+}
+img#user{
+    width: 66px;
+    height: 66px;
+    display: block;
+    margin-left: 225px;
+    margin-right: auto;
+    margin-top: 16px;
+}
+img#eye:hover, img#eye2:hover{
+    cursor: pointer;
+}
+img#eye, img#eye2{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-right: 285px;
+    margin-left: auto;
+}
+textarea{
+    width: 500px;
+    height: 130px;
+}
+div#ToutPage{
+    
+    padding-left: 60px;
+    padding-top: 45px;
+    
+}

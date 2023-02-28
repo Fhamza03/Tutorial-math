@@ -1,0 +1,57 @@
+img#logo{
+    width: 127px;
+    height: 70px;
+}
+h2#aide{
+    text-align: center;
+}
+p.container-fluid{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+p.container-fluid:hover{
+    cursor: pointer;
+    background-color: rgba(236, 235, 235, 0.521);
+    border-left: solid rgb(98, 98, 214);
+}
+a.text-secondary:hover{
+    zoom: 1.5; 
+}
+img#mathPic{
+    width: 66px;
+    height: 200px;
+}
+
+.bg-imagee {
+    background-image: url("Student1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+}
+h2#title{
+    display: block;
+    margin-right: auto ;
+    margin-left: 9px;
+    padding-top: 195px ;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    animation: fallingTitle 2s ease-in-out;
+}
+@keyframes fallingTitle {
+    0% {
+        transform: translateY(-72%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+li>a#dorp :hover{
+   text-align: center; 
+   background-color: rgb(187, 184, 184);
+   color: black;
+}

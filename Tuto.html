@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Facile - Tutorial</title>
+    <link rel="stylesheet" href="Tuto.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="Tuto.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="Math facile.png" alt="" id="logo">
+          
+          <div class="collapse navbar-collapse container" id="navbarTogglerDemo03">
+            <form class="d-flex" role="search">
+              <input id="search-input"    name="search-input"    class="form-control me-2" type="search" placeholder="Chercher" aria-label="Search" id="InputBar">
+              <button id="search-button"  onclick="search(event)"     class="btn btn-outline-primary" type="submit" id="search" onclick="AfficheCours()">Chercher</button>
+            </form>
+          </div> 
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 container">
+            <li class="nav-item">
+              <a class="nav-link active text text-light" aria-current="page" href="Accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseover="Affiche()" onclick="Hide()"> 
+                  Tutorial
+                </button>
+                <ul class="dropdown-menu" style="display: none;" id="drop">
+                  <li><a class="nav-link text text-primary" href="Tuto.html" style="text-align: center;" id="algebre" onclick="ShowAlg(event)">Algébre</a></li>
+                  <li><a class="nav-link text text-primary" href="Tuto.html" style="text-align: center;" id="analyse" onclick="ShowAnl(event)">Analyse</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text text-light" href="TuteurPv.html" id="tutoPv" style="pointer-events: none;">Tuteur privé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text text-light" href="login.php">Se connecter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text text-light" href="ContactUs.php">Nous contacter</a>
+              </li>
+          </ul>
+      </nav>
+      
+      <div class="bg" id="bgg">
+        
+           <!-- <h5 class="text-primary" id="title">Bienvenue chers étudiants dans la partie Tutorial içi vous trouvez tous vos cours et exercices!</h5> -->
+           <div class="container">
+          <div class="Tout">
+                      <div class="row">
+                        <div class="col-md-6" id="alg">
+                          <p class="text-primary">Algébre</p>
+                          
+                              <h6 class="title"  >Logique (<a href="Logique.pdf"    class="text-success" id="Logique" onclick="Save('Logique')">cours</a> , <a href="ExLogique.pdf" class="text-danger"   id="exLogique" onclick="Save('exLogique')">exercices</a>)</h6><br>
+                            
+                            
+                              <h6  class="title" >Application linéaire (<a href="ApplicationLin.pdf"class="lien"  class="text-success" id="Len" onclick="Save('Len')">cours</a> , <a href="ExAppLin.pdf"  class="lien"       class="text-danger" id="exLen" onclick="Save('exLen')">exercices</a>)</h6><br>
+                            
+                              <h6 class="title"      >Ensemble et application (<a href="EnsembleApp.pdf" class="text-success" id="Ensmblapp" onclick="Save('Ensmblapp')">cours</a> , <a href="ExEnsembleApp.pdf" class="text-danger" id="exEnsmblapp" onclick="Save('exEnsmblapp')">exercices</a>)</h6><br>
+                              <h6 class="title"       >Nombre complexe (<a href="NbrCmplx.pdf" class="text-success" id="nbrcmplx" onclick="Save('nbrcmplx')">cours</a> , <a href="ExNbrCmplx.pdf" class="text-danger" id="exnbrcmplx" onclick="Save('exnbrcmplx')">exercices</a>)</h6><br>
+                              <h6 class="title"         >Réduction endomorphisme (<a href="ReducEndo.pdf" class="text-success" id="reducendo" onclick="Save('reducendo')">cours</a> , <a href="ExReduEndo.pdf" class="text-danger" id="exreducendo" onclick="Save('exreducendo')">exercices</a>)</h6><br>
+                              <h6  class="title"       >Espace euclidiens (<a href="EspaceEuclidiens.PDF" class="text-success" id="espceucld" onclick="Save('espceucld')">cours</a> , <a href="ExEspcEucl.pdf" class="text-danger" id="exespceucld" onclick="Save('exespceucld')">exercices</a>)</h6><br>
+                              <h6  class="title"      >L'espace vectoriel (<a href="EspaceVect.pdf" class="text-success" id="espacvect" onclick="Save('espacvect')">cours</a> , <a href="ExEspaceVect.pdf" class="text-danger" id="exespacvect" onclick="Save('exespacvect')">exercices</a>)</h6><br>
+                              <h6   class="title"        >Forme déffirentielle (<a href="FormeDifférentielle.pdf" class="text-success" id="formdiff" onclick="Save('formdiff')">cours</a> , <a href="ExFormDiff.pdf" class="text-danger" id="exformdiff" onclick="Save('exformdiff')">exercices</a>)</h6><br>                             
+                              <h6  class="title"           >Les matrices (<a href="Matrice.pdf" class="text-success" id="matrice" onclick="Save('matrice')">cours</a> , <a href="ExMatr.pdf" class="text-danger" id="exmatrice" onclick="Save('exmatrice')">exercices</a>)</h6><br>
+                              <h6  class="title"              >Diagonalisation (<a href="Diagonalisation.pdf" class="text-success" id="diago" onclick="Save('diago')">cours</a> ,  <a href="ExDiago.pdf" class="text-danger" id="exdiago" onclick="Save('exdiago')">exercices</a>)</h6><br>
+                              <h6  class="title"            >Fraction rationelle (<a href="FractRatio.pdf" class="text-success" id="fractratio" onclick="Save('fractratio')">cours</a> , <a href="ExFractRatio.pdf" class="text-danger" id="exfractratio" onclick="Save('exfractratio')">exercices</a>)</h6><br>
+                              <h6  class="title"              >Les polynomes (<a href="Polynome.pdf" class="text-success"  id="polynome" onclick="Save('polynome')">cours</a> , <a href="ExPolyn.pdf" class="text-danger" id="expolynome" onclick="Save('expolynome')">exercices</a>)</h6>
+                              
+                            </div>
+                        <div class="col-md-6" id="anl">
+                          <p class="text-primary">Analyse</p>
+                              <h6 class="title"          >Intégrale (<a href="Integrale.pdf" class="text-success" id="Int" onclick="Save('Int')">cours</a> , <a href="ExIntegrale.pdf" class="text-danger" id="exInt" onclick="Save('exInt')">exercices</a>)</h6><br>
+                              <h6   class="title"           >Suite aréthmitique et géometrique (<a href="SuiteArtGeo.pdf" class="text-success" id="Argeo" onclick="Save('Argeo')">cours</a> , <a href="ExSuite.pdf" class="text-danger" id="exArgeo" onclick="Save('exArgeo')">exercices</a>)</h6><br>
+                              <h6  class="title"               >Domaine de définition (<a href="DomaineDef.pdf" class="text-success" id="Ddf" onclick="Save('Ddf')">cours</a> , <a href="ExDomaineDef.pdf" class="text-danger" id="exDdf" onclick="Save('exDdf')">exercices</a>)</h6><br>
+                              <h6  class="title"            >Limite et continuité (<a href="LimiteContin.pdf" class="text-success" id="Limcon" onclick="Save('Limcon')">cours</a> , <a href="ExLimCon.pdf" class="text-danger" id="exLimcon" onclick="Save('exLimcon')">exercices</a>)</h6><br>
+                              <h6  class="title"           >Dévloppement limité (<a href="DevLimt.pdf" class="text-success" id="Devlim" onclick="Save('Devlim')">cours</a> , <a href="ExDevLim.pdf" class="text-danger" id="exDevlim" onclick="Save('exDevlim')">exercices</a>)</h6><br>
+                              <h6  class="title"              >Dérivabilité (<a href="Derivab.pdf" class="text-success" id="deriv" onclick="Save('deriv')">cours</a> , <a href="ExDervibilite.pdf" class="text-danger" id="exderiv"  onclick="Save('exderiv')">exercices</a>)</h6><br>
+                              <h6  class="title"              >Fonctions harmoniques (<a href="FonctionHarmonique.pdf" class="text-success" id="Fha" onclick="Save('Fha')">cours</a> , <a href="ExFonctionHarmoniques.pdf" class="text-danger" id="exFha"  onclick="Save('exFha')">exercices</a>)</h6><br>
+                              <h6   class="title"               >Fonctions holomorphes (<a href="FonctionHolomorphes.pdf" class="text-success" id="Fho" onclick="Save('Fho')">cours</a> , <a href="ExFonctionHolomorphes.pdf" class="text-danger" id="exFho"  onclick="Save('exFho')">exercices</a>)</h6><br>
+                              <h6  class="title"                >Séries de fourier (<a href="SerieFr.pdf" class="text-success" id="Sfr" onclick="Save('Sfr')">cours</a> , <a href="ExSerieFr.pdf" class="text-danger" id="exSfr" onclick="Save('exSfr')">exercices</a>)</h6><br>
+                              <h6   class="title"              >Séries entières (<a href="SerieEntr.pdf" class="text-success" id="Sent" onclick="Save('Sent')">cours</a> , <a href="ExSerieEnt.pdf" class="text-danger" id="exSent"  onclick="Save('exSent')">exercices</a>)</h6><br>
+                              <h6   class="title"            >Différentiabilité (<a href="Différentiabilité.pdf" class="text-success" id="Deff" onclick="Save('Deff')">cours</a> , <a href="ExDifférentiabilité.pdf" class="text-danger" id="exDeff"  onclick="Save('exDeff')">exercices</a>)</h6><br>
+                              <h6   class="title"              >Intégrale multiple (<a href="IntgMult.pdf" class="text-success" id="Intmultp" onclick="Save('Intmultp')">cours</a> , <a href="ExIntgMult.pdf" class="text-danger" id="exIntmultp" onclick="Save('exIntmultp')">exercices</a>)</h6><br> 
+                              
+                       
+                            </div>
+                            
+                      </div>
+                  </div>
+                
+              </div>
+              
+        </div>
+        
+        
+      </div>
+       
+
+
+      
+        <script src="Tuto.js"></script>
+</body>
+</html>

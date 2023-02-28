@@ -1,0 +1,71 @@
+img#logo{
+    width: 127px;
+    height: 70px;
+}
+
+h2{
+    display: block;
+    margin-right: auto ;
+    margin-left: 9px;
+    padding-top: 195px ;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    animation: fallingTitle 2s ease-in-out;
+}
+
+@keyframes fallingTitle {
+    0% {
+        transform: translateY(-72%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+label{
+    font-family: 'Roboto', sans-serif;
+}
+img#eye{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-right: 20px;
+    margin-left: auto;
+}
+img#eye:hover{
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+}
+p:hover{
+    cursor: pointer;
+    background-color: rgba(236, 235, 235, 0.521);
+    border-left: solid rgb(98, 98, 214);
+    padding-left: 10px;
+}
+
+div#ToutPage{
+    padding-top: 23px;
+    
+    
+}
+.bg-imagee {
+    background-image: url("Student.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+    /* filter: blur(2px); */
+  
+}
+button#btConnecter{
+    margin-bottom: 15px;
+}
+#homme{
+    
+    height: 560px;
+}

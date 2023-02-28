@@ -1,0 +1,72 @@
+body{
+    padding:50px;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+div#bg-image{
+    background-image: url("CovIns.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+}
+img#eye, img#eye2{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-right: 380px;
+    margin-left: auto;
+    
+}
+img#eye:hover, img#eye2:hover{
+    cursor: pointer;
+}
+p{
+    display: block;
+    margin-left: 37px;
+    margin-right: auto;
+}
+img#logo{
+    width: 127px;
+    height: 70px;
+}
+img#user{
+    width: 70px;
+    height: 68px;
+    display: block;
+    margin-left: 259px;
+    margin-right: auto;
+    margin-top: 16px;
+}
+div#ToutPage{
+    padding-left: 360px; 
+}
+
+img#homme{
+    width: 550px;
+    height: 540px;
+}
+div#bg-image{
+    background-image: url("CovIns.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bas{
+    padding-bottom: 10px;
+}
+div#button1{
+    padding-left:215px ;
+}
+div#buttons{
+    word-spacing: 20px;
+}
